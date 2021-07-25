@@ -6,7 +6,7 @@ var butterscothcount = 0;
 var vanillacount = 0;
 var redvelvetcount = 0;
 var total = 0;
-var chocolate = function(){
+function chocolate(){
     for(let i=0;i<6;i++){
         if(count==i){
             document.getElementById("layer"+i).style.visibility="visible";
@@ -20,7 +20,7 @@ var chocolate = function(){
     }
     count++;
 }
-var strawberry = function(){
+function strawberry(){
     for(let i=0;i<6;i++){
         if(count==i){
             document.getElementById("layer"+i).style.visibility="visible";
@@ -34,7 +34,7 @@ var strawberry = function(){
     }
     count++;
 }
-var butterscoth = function(){
+function butterscoth(){
     for(let i=0;i<6;i++){
         if(count==i){
             document.getElementById("layer"+i).style.visibility="visible";
@@ -48,7 +48,7 @@ var butterscoth = function(){
     }
     count++;
 }
-var vanilla = function(){
+function vanilla(){
     for(let i=0;i<6;i++){
         if(count==i){
             document.getElementById("layer"+i).style.visibility="visible";
@@ -62,7 +62,7 @@ var vanilla = function(){
     }
     count++;
 }
-var redvelvet = function(){
+function redvelvet(){
     for(let i=0;i<6;i++){
         if(count==i){
             document.getElementById("layer"+i).style.visibility="visible";
@@ -76,7 +76,7 @@ var redvelvet = function(){
     }
     count++;
 }
-var buycake = function(){
+function buycake(){
     document.getElementById("total-cost").innerHTML = total;
     document.getElementById("total").style.display = "block";
 }
