@@ -7,7 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="section-1">
+            <div class="headerimg">
+                <img src="./assets/cake.png" alt="">
+                <h4>Cake World</h4>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="sub-section-1">
+                <img src="./assets/list_template.png" alt="">
+                <div class="price-list">
+                    <h5>PRICES</h5>
+                    <ul>
+                        <li>Chocolate ---- 300</li>
+                        <li>Strawberry --- 100</li>
+                        <li>Butterscoth -- 200</li>
+                        <li>Vanilla ------ 250</li>
+                        <li>RedVelvet ---- 350</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-section-2">
+                <div id="layer1"></div>
+                <div id="layer2"></div>
+                <div id="layer3"></div>
+                <div id="layer4"></div>
+                <div id="layer5"></div>
+                <img id="candles" width="10%" src="./assets/candle.png" alt="">
+            </div>
+            <div class="sub-section-3">
+                <img src="./assets/list_template.png" alt="">
+                <div class="bill-list">
+                    <h5>BILL</h5>
+                    <ul>
+                        <li id="chocolate">Chocolate ---- 300</li>
+                        <li id="strawberry">Strawberry --- 100</li>
+                        <li id="butterscoth">Butterscoth -- 200</li>
+                        <li id="vanilla">Vanilla ------ 250</li>
+                        <li id="redvelvet">RedVelvet ---- 350</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <button class="flavour-btn" onclick="chocolate()">Chocolate</button>
+            <button class="flavour-btn" onclick="strawberry()">Strawberry</button>
+            <button class="flavour-btn" onclick="butterscoth()">Butterscoth</button>
+            <button class="flavour-btn" onclick="vanilla()">Vanilla</button>
+            <button class="flavour-btn" onclick="redvelvet()">Red Velvet</button>
+            <button class="buy-btn">Buy</button>
+        </div>
+    </div>
 </body>
 <script src="/script.js"></script>
 </html>
