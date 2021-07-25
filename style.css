@@ -10,6 +10,9 @@
 li{
     list-style: none;
 }
+body{
+    background-color: rgb(255, 255, 183);
+}
 /* Fill your code*/
 .container{
     min-height:100vh;
@@ -22,8 +25,8 @@ li{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(205, 50, 50);
-    box-shadow: 0px 4px 10px 1px rgb(205, 50, 50);
+    background-color: rgb(255, 91, 91);
+    box-shadow: 0px 4px 10px 1px rgb(255, 91, 91);
     z-index: 1;
 }
 .section-1 .headerimg{
@@ -39,10 +42,24 @@ li{
     bottom: 20px;
 }
 .section-2{
-    /* background-color: #CDCD32; */
     height:100%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
+}
+.section-2 .sub-section-1{
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.section-2 .sub-section-3{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+.section-2 .sub-section-1,.sub-section-3{
+    
+    background-color: rgb(163, 255, 160);
+}
+.section-2 .sub-section-2{
+    background-color: rgb(255, 255, 183);
 }
 .section-2 .sub-section-1 h5{
     text-align: center;
@@ -69,11 +86,13 @@ li{
 .bill-list{
     position: absolute;
 }
+#total{
+    text-align: center;
+}
 .sub-section-1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 .price-list{
     position: absolute;
@@ -83,7 +102,7 @@ li{
     flex-direction: column-reverse;
     justify-content:center;
     align-items: center;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 .sub-section-2 img{
     display: none;
@@ -131,8 +150,8 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(205, 50, 50);
-    box-shadow: 0px 0px 10px 1px rgb(205, 50, 50);
+    background-color: rgb(255, 91, 91);
+    box-shadow: 0px 0px 10px 1px rgb(255, 91, 91);
 }
 .section-3 .flavour-btn{
     font-size: 20px;
@@ -144,6 +163,8 @@ li{
     box-shadow: 0px 4px 10px 1px rgb(255, 255, 255);
     transition: 1s;
     cursor: pointer;
+    background-color: yellow;
+    box-shadow: 0px 4px 10px 1px yellow;
 }
 .section-3 .flavour-btn:hover{
     transform: scale(1.1);
@@ -154,8 +175,8 @@ li{
     width:80px;
     height:40px;
     border: none;
-    background-color: yellow;
-    box-shadow: 0px 4px 10px 1px yellow;
+    background-color: rgb(30, 255, 0);
+    box-shadow: 0px 4px 10px 1px rgb(30, 255, 0);
     border-radius: 6px;
     cursor: pointer;
 }

@@ -41,22 +41,23 @@
                 <div class="bill-list">
                     <h5>BILL</h5>
                     <ul>
-                        <li id="chocolate">Chocolate ---- 300</li>
-                        <li id="strawberry">Strawberry --- 100</li>
-                        <li id="butterscoth">Butterscoth -- 200</li>
-                        <li id="vanilla">Vanilla ------ 250</li>
-                        <li id="redvelvet">RedVelvet ---- 350</li>
+                        <li id="chocolate">Chocolate ---- 300<span id="quantity1"></span></li>
+                        <li id="strawberry">Strawberry --- 100<span id="quantity2"></span></li>
+                        <li id="butterscoth">Butterscoth -- 200<span id="quantity3"></span></li>
+                        <li id="vanilla">Vanilla ------ 250<span id="quantity4"></span></li>
+                        <li id="redvelvet">RedVelvet ---- 350<span id="quantity5"></span></li>
                     </ul>
+                    <h3 id="total" style="display: none;">Total ----- <span id="total-cost"></span></h3>
                 </div>
             </div>
         </div>
         <div class="section-3">
-            <button class="flavour-btn" onclick="chocolate()">Chocolate</button>
-            <button class="flavour-btn" onclick="strawberry()">Strawberry</button>
-            <button class="flavour-btn" onclick="butterscoth()">Butterscoth</button>
-            <button class="flavour-btn" onclick="vanilla()">Vanilla</button>
-            <button class="flavour-btn" onclick="redvelvet()">Red Velvet</button>
-            <button class="buy-btn">Buy</button>
+            <button class="flavour-btn" id="chocolate-btn" onclick="chocolate()">Chocolate</button>
+            <button class="flavour-btn" id="strawberry-btn" onclick="strawberry()">Strawberry</button>
+            <button class="flavour-btn" id="butterscoth-btn" onclick="butterscoth()">Butterscoth</button>
+            <button class="flavour-btn" id="vanilla-btn" onclick="vanilla()">Vanilla</button>
+            <button class="flavour-btn" id="redvelvet-btn" onclick="redvelvet()">Red Velvet</button>
+            <button class="buy-btn" onclick="buycake()">Buy</button>
         </div>
     </div>
 </body>
