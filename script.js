@@ -16,6 +16,7 @@ function chocolate(){
             chococount++;
             document.getElementById("quantity1").innerHTML="x"+chococount;
             document.getElementById("chocolate-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
         }
     }
     count++;
@@ -30,6 +31,7 @@ function strawberry(){
             strawberrycount++;
             document.getElementById("quantity2").innerHTML="x"+strawberrycount;
             document.getElementById("strawberry-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
         }
     }
     count++;
@@ -44,6 +46,7 @@ function butterscoth(){
             butterscothcount++;
             document.getElementById("quantity3").innerHTML="x"+butterscothcount;
             document.getElementById("butterscoth-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
         }
     }
     count++;
@@ -58,6 +61,7 @@ function vanilla(){
             vanillacount++;
             document.getElementById("quantity4").innerHTML="x"+vanillacount;
             document.getElementById("vanilla-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
         }
     }
     count++;
@@ -72,6 +76,7 @@ function redvelvet(){
             redvelvetcount++;
             document.getElementById("quantity5").innerHTML="x"+redvelvetcount;
             document.getElementById("redvelvet-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
         }
     }
     count++;
@@ -80,6 +85,23 @@ function buycake(){
     document.getElementById("total-cost").innerHTML = total;
     document.getElementById("total").style.display = "block";
     if(count==6){
-        document.getElementById("candles").style.display="block";
+        document.getElementById("candles").style.top="10px";
+        document.getElementById("candles").style.visibility="visible";
     }   
+    if(count==5){
+        document.getElementById("candles").style.top="60px";
+        document.getElementById("candles").style.visibility="visible";
+    }  
+    if(count==4){
+        document.getElementById("candles").style.top="110px";
+        document.getElementById("candles").style.visibility="visible";
+    }  
+    if(count==3){
+        document.getElementById("candles").style.top="160px";
+        document.getElementById("candles").style.visibility="visible";
+    }  
+    if(count==2){
+        document.getElementById("candles").style.top="210px";
+        document.getElementById("candles").style.visibility="visible";
+    }  
 }
