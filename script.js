@@ -79,4 +79,7 @@ function redvelvet(){
 function buycake(){
     document.getElementById("total-cost").innerHTML = total;
     document.getElementById("total").style.display = "block";
+    if(count==6){
+        document.getElementById("candles").style.display="block";
+    }   
 }
