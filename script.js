@@ -80,6 +80,7 @@ function redvelvet(){
             redvelvetcount++;
             document.getElementById("quantity5").innerHTML="x"+redvelvetcount;
             document.getElementById("redvelvet-btn").style.backgroundColor="white";
+            document.getElementById("candles").style.visibility="hidden";
             document.getElementById("total").style.visibility = "hidden";
         }
     }
