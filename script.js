@@ -17,6 +17,7 @@ function chocolate(){
             document.getElementById("quantity1").innerHTML="x"+chococount;
             document.getElementById("chocolate-btn").style.backgroundColor="white";
             document.getElementById("candles").style.visibility="hidden";
+            document.getElementById("total").style.visibility = "hidden";
         }
     }
     count++;
@@ -32,6 +33,7 @@ function strawberry(){
             document.getElementById("quantity2").innerHTML="x"+strawberrycount;
             document.getElementById("strawberry-btn").style.backgroundColor="white";
             document.getElementById("candles").style.visibility="hidden";
+            document.getElementById("total").style.visibility = "hidden";
         }
     }
     count++;
@@ -47,6 +49,7 @@ function butterscoth(){
             document.getElementById("quantity3").innerHTML="x"+butterscothcount;
             document.getElementById("butterscoth-btn").style.backgroundColor="white";
             document.getElementById("candles").style.visibility="hidden";
+            document.getElementById("total").style.visibility = "hidden";
         }
     }
     count++;
@@ -62,6 +65,7 @@ function vanilla(){
             document.getElementById("quantity4").innerHTML="x"+vanillacount;
             document.getElementById("vanilla-btn").style.backgroundColor="white";
             document.getElementById("candles").style.visibility="hidden";
+            document.getElementById("total").style.visibility = "hidden";
         }
     }
     count++;
@@ -76,7 +80,7 @@ function redvelvet(){
             redvelvetcount++;
             document.getElementById("quantity5").innerHTML="x"+redvelvetcount;
             document.getElementById("redvelvet-btn").style.backgroundColor="white";
-            document.getElementById("candles").style.visibility="hidden";
+            document.getElementById("total").style.visibility = "hidden";
         }
     }
     count++;
@@ -84,6 +88,7 @@ function redvelvet(){
 function buycake(){
     document.getElementById("total-cost").innerHTML = total;
     document.getElementById("total").style.display = "block";
+    document.getElementById("total").style.visibility = "visible";
     if(count==6){
         document.getElementById("candles").style.top="10px";
         document.getElementById("candles").style.visibility="visible";
